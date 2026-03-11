@@ -1,5 +1,7 @@
 
 // src/app/api/generate/route.ts
+export const runtime = 'edge';
+
 import { NextRequest, NextResponse } from "next/server";
 import { buildSystemPrompt, buildUserMessage } from "@/lib/prompt-builder";
 import { FormData } from "@/types";
